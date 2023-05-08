@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Konkhmer Sleokchher', cursive;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(10, 22, 39, 0.7), rgba(31, 29, 44, 0.7)), url(Images/Banner_.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #C1C1C1;
+    text-decoration: none;
+    font-size: 13px;
+    font-style: none;
+}
+
+.nav-links ul li ::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #FE0039;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li :hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #C1C1C1;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 52px;
+}
+
+.text-box p {
+    margin: 10px 0 30px;
+    font-size: 12px;
+    color: #C1C1C1;
+}
+
+.hero_btn {
+    display: inline-block;
+    color: #C1C1C1;
+    text-decoration: none;
+    border: 1px solid #C1C1C1;
+    padding: 12px 30px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero_btn:hover {
+    border: 1px solid #FE0039;
+    background: #FE0039;
+    transition: 1s;
+}
+
+@media (max-width:700px) {
+    .text-box h1 {
+        font-size: 22px;
+    }
+    .text-box {
+        width: 90%;
+        color: #C1C1C1;
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
